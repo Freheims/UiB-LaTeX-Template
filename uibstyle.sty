@@ -1,0 +1,54 @@
+\usepackage[utf8]{inputenc} % This defines the font-encoding you prefer to use
+\usepackage{fourier}
+\pagestyle{headings}
+\usepackage{marvosym}
+\usepackage[pdftex]{graphicx}
+\usepackage[margin=2.5cm, twoside]{geometry}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage[longnamesfirst]{natbib}
+%\usepackage[numbers]{natbib} % Use this command if you want to refer to the literature by numbers, e.g., [1]
+\usepackage{setspace}
+\linespread{1.2} %Changed from 1.5
+
+\newenvironment{remark}{\par\mbox{}\par\noindent{\bfseries \emph{Remark}\/}:\normalfont}{\par}
+\newenvironment{defin}{\par\mbox{}\par\noindent\bfseries \emph{\Pointinghand\ }\normalfont}{\par}
+\setcounter{tocdepth}{4} 
+\usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV,
+linkcolor=black, citecolor=black, urlcolor=blue, breaklinks]{hyperref}
+\pdfcompresslevel=9
+
+\usepackage[cache=false]{minted}
+\usemintedstyle{friendly}
+\AtBeginEnvironment{minted}{%
+	\renewcommand{\fcolorbox}[4][]{#4}}
+
+\renewcommand\listoflistingscaption{List of source codes}
+
+\usepackage{subfiles}
+
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{.5em}
+
+\newcommand{\blankpage}{\newpage{}\thispagestyle{empty}\mbox{}\newpage{}}
+
+
+%HEADERS
+\setlength{\headheight}{15pt}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+
+\fancypagestyle{plain}{ %
+  \fancyhf{} % remove everything
+  \renewcommand{\headrulewidth}{0pt} % remove lines as well
+  \renewcommand{\footrulewidth}{0pt}
+  \fancyhead[RO,LE]{\thepage}
+}

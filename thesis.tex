@@ -1,0 +1,49 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = en-US
+
+
+% This is the root file of your thesis: thesis.tex
+% A line starting with % is a comment. In some cases, I have included a command preceded by a %. You may activate the command by removing the %.
+
+%%===================================
+\documentclass[12pt]{report}
+\usepackage{uibstyle}
+%%===================================
+%Write the various parts of your thesis as separate files and include them into the main file by the command \include{name of included file}. When you compile the LaTeX file, you may choose which subfiles to include by the command
+
+%\includeonly{chapter01,chapter02}
+
+%%===================================
+\begin{document}
+\subfile{front} % This is the titlepage
+\pagenumbering{roman}
+\setcounter{page}{2}
+\subfile{quote}
+\subfile{abstract}
+\subfile{acknowledgment}
+\tableofcontents
+\listoffigures
+\blankpage
+\listoftables
+\blankpage
+\listoflistings
+\blankpage
+\subfile{acronyms}
+\setcounter{page}{0}
+\pagenumbering{arabic}
+%%=========================================
+\subfile{chapter01}
+\subfile{chapter02}
+\subfile{chapter0n}
+% Include more chapters as required.
+%%=========================================
+\bibliographystyle{apa}
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{refs}  
+\blankpage
+\appendix
+\subfile{appendix-a}
+% Include more appendices as required.
+%%=========================================
+
+\end{document}
