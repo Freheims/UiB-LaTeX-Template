@@ -7,20 +7,17 @@
 
 %%===================================
 \documentclass[12pt]{report}
-\usepackage{uibstyle}
+\usepackage{../uibstyle}
 %%===================================
-%Write the various parts of your thesis as separate files and include them into the main file by the command \include{name of included file}. When you compile the LaTeX file, you may choose which subfiles to include by the command
-
-%\includeonly{chapter01,chapter02}
 
 %%===================================
 \begin{document}
-\subfile{Front/front} % This is the titlepage
+\subfile{../Front/front} % This is the titlepage
 \pagenumbering{roman}
 \setcounter{page}{2}
-\subfile{Front/quote}
-\subfile{Front/abstract}
-\subfile{Front/acknowledgment}
+\subfile{../Front/quote}
+\subfile{../Front/abstract}
+\subfile{../Front/acknowledgment}
 \tableofcontents
 \listoffigures
 \blankpage
@@ -28,21 +25,21 @@
 \blankpage
 \listoflistings
 \blankpage
-\subfile{Front/acronyms}
+\subfile{../Front/acronyms}
 \setcounter{page}{0}
 \pagenumbering{arabic}
 %%=========================================
-\subfile{Chapters/chapter01}
-\subfile{Chapters/chapter02}
-\subfile{Chapters/chapter0n}
+\subfile{../Chapters/chapter01}
+\subfile{../Chapters/chapter02}
+\subfile{../Chapters/chapter0n}
 % Include more chapters as required.
 %%=========================================
 \bibliographystyle{apa}
 \addcontentsline{toc}{chapter}{\bibname}
-\bibliography{refs}  
+\bibliography{../refs}  
 \blankpage
 \appendix
-\subfile{Appendices/appendix-a}
+\subfile{../Appendices/appendix-a}
 % Include more appendices as required.
 %%=========================================
 
