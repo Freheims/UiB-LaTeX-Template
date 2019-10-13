@@ -1,11 +1,11 @@
-% !TEX encoding = UTF-8 Unicode
-%!TEX root = ../Main/thesis.tex
 % !TEX spellcheck = en-US
 %%=========================================
 \documentclass[../Main/thesis.tex]{subfiles}
 \begin{document}
 \chapter{Introduction}
 \label{ch:introduction}
+{\large{\color{red}\textbf{NB!} The content of this template is taken from a template for NTNU and the formal requirements stated here might not be valid at your department. Check your local guidelines for correct and updated requirements}}
+
 The first chapter of a well-structured thesis is always an introduction, setting the scene with background, problem description, objectives, limitations, and then looking ahead to summarize what is in the rest of the report. 
 This is the part that readers look at first---\emph{so make sure it hooks them!}
 
@@ -37,7 +37,7 @@ References to literature can be given in two different ways:
 In the example above, we have used ``author-year'' references, which is the preferred format. 
 \begin{remark}
 Following agreement with your supervisor, you may also refer by numbers, for example,  [1]. 
-To do this, open the file \texttt{ramsstyle.sty} and  comment out (by \%) the command \texttt{$\backslash$usepackage\{natbib\}} and un-comment the corresponding command \texttt{$\backslash$usepackage[numbers]\{natbib\}}.\footnote{Notice the strange way we have to write the ``backslash'' in the text. 
+To do this, open the file \texttt{uibstyle.sty} and  comment out (by \%) the command \texttt{$\backslash$usepackage\{natbib\}} and un-comment the corresponding command \texttt{$\backslash$usepackage[numbers]\{natbib\}}.\footnote{Notice the strange way we have to write the ``backslash'' in the text. 
 This is because the ``backslash'' is a command in \LaTeX.}
 \end{remark}
  You may include a link to the Internet in the text or in a footnote by using a command like: \url{http://www.ntnu.edu/ross}. 
@@ -46,8 +46,8 @@ When you refer to the scientific literature, you should always write in \emph{pr
 Example: \citet{rausand04} show that \ldots.
 
 \begin{remark}
-Hyperlinks are included by the command \texttt{$\backslash$usepackage\{hyperref}\} in \texttt{ramsstyle.sty}. 
-If you feel that the hyperlinks are disturbing when you enter the text, or want to avoid the hyperlinks in printed text, you may either comment out or edit this command in \texttt{ramsstyle.sty}.
+Hyperlinks are included by the command \texttt{$\backslash$usepackage\{hyperref}\} in \texttt{uibstyle.sty}. 
+If you feel that the hyperlinks are disturbing when you enter the text, or want to avoid the hyperlinks in printed text, you may either comment out or edit this command in \texttt{uibstyle.sty}.
 \end{remark}
 %%=========================================
 \subsection*{What Remains to be Done?}
